@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap');
+:root{
+    --primary-bg:hsl(233, 47%, 7%);
+    --primary-card-bg:hsl(244, 38%, 16%);
+    --primary-soft-violet:hsl(277, 64%, 61%);
+    
+    --neutral-white: hsl(0, 0%, 100%);
+    --neutral-para-white: hsla(0, 0%, 100%, 0.75);
+    --neutral-head-white:hsla(0, 0%, 100%, 0.6);
+
+    --fs-heading:30px;
+    --fs-sub-heading:20px;
+    --fs-body:15px;
+
+    --fs-family:'Inter', sans-serif;
+    --fs-deca-family: 'Lexend Deca', sans-serif;
+
+    --fw-400:400;
+    --fw-700:700;
+}
+body{
+    background-color: var(--primary-bg);
+}
+.card{
+    margin:10% auto;
+    background-color: var(--primary-card-bg);
+    
+}
+
+.card-body{
+    padding: 50px;
+    
+}
+.card-title{
+    color: var(--neutral-white);
+    font-family: var(--fs-family);
+    font-weight: var(--fw-700);
+}
+
+.card-text{
+    color: var(--neutral-para-white);
+    font-size: var(--fs-body);
+    font-weight: var(--fw-400);
+    font-family: var(--fs-deca-family);
+}
+
+.card-title span{
+    color: var(--primary-soft-violet);
+}
+
+.p-0>h6{
+    color: var(--neutral-white);
+    font-family: var(--fs-family);
+    font-weight: var(--fw-700);
+    font-size: var(--fs-sub-heading);
+}
+
+.p-0>p{
+    font-size: var(--fs-body);
+    font-weight: var(--fw-400);
+
+    color: var(--neutral-para-white);
+    font-family: var(--fs-deca-family);
+    text-transform: uppercase;
+}
+
+.second{
+    background-image: url(./images/image-header-desktop.jpg);
+    background-blend-mode: multiply;
+    background-color: var(--primary-soft-violet);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 400px;
+}
+
+@media (max-width:1440px){
+    .card{
+        max-width: 600px;
+    }
+    .card-body{
+        padding: 20px;
+        
+    }
+    .card-title{
+        font-size: var(--fs-sub-heading);
+    }
+    .p-0>h6{
+        font-size: var(--fs-body);
+    }
+    .card-text,.p-0>p{
+        font-size: 12px;
+    }
+    .second{
+        order: 2;
+    }
+}
+
+@media (max-width:375px){
+    .card-body{
+        text-align: center;
+        padding: 30px;
+    }
+   
+    
+    .d-flex{
+        flex-direction: column;
+    }
+    .card-title{
+        font-size: var(--fs-sub-heading);
+    }
+    .p-0{
+        margin: 8px;
+    }
+    .p-0>h6{
+        font-size: var(--fs-body);
+    }
+    .card-text,.p-0>p{
+        font-size: 12px;
+    }
+
+   
+    .first{
+        order: 2;
+    }
+
+    .second{
+        height: 300px;
+        order: 1;
+        background-image: url(./images/image-header-mobile.jpg);
+    }
+
+}
