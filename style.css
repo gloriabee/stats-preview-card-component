@@ -71,19 +71,22 @@ body{
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
-    height: 400px;
+    height: 370px;
 }
 
 @media (max-width:1440px){
     .card{
-        max-width: 600px;
+        margin:20% auto;
+        background-color: var(--primary-card-bg);
+        max-width: 800px;
     }
+
     .card-body{
-        padding: 20px;
+        padding:50px;
         
     }
     .card-title{
-        font-size: var(--fs-sub-heading);
+        font-size: var(--fs-heading);
     }
     .p-0>h6{
         font-size: var(--fs-body);
